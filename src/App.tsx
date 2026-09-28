@@ -12,6 +12,7 @@ import ResearchDetail from "./pages/ResearchDetail/ResearchDetail";
 import Expeditions from "./pages/Expeditions/Expeditions";
 import ExpeditionDetail from "./pages/ExpeditionDetail/ExpeditionDetail";
 import Media from "./pages/Media/Media";
+import Learn from "./pages/Learn/Learn";
 
 function Landing() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
         </Route>
 
         <Route path="*" element={<NotFound />} />
+        <Route path="/learn" element={<Learn />} />
       </Routes>
     </BrowserRouter>
   );
