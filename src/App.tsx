@@ -7,6 +7,10 @@ import {
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Personalized from "./pages/Personalized/Personalized";
+import Research from "./pages/Research/Research";
+import ResearchDetail from "./pages/ResearchDetail/ResearchDetail";
+import Expeditions from "./pages/Expeditions/Expeditions";
+import ExpeditionDetail from "./pages/ExpeditionDetail/ExpeditionDetail";
 
 function Landing() {
   return (
@@ -35,6 +39,13 @@ export default function App() {
         <Route element={<AuthenticatedLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/personalized" element={<Personalized />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/research/:id" element={<ResearchDetail />} />
+          <Route path="/expeditions" element={<Expeditions />} />
+  <Route
+    path="/expeditions/:id"
+    element={<ExpeditionDetail />}
+  />
         </Route>
 
         <Route path="*" element={<NotFound />} />
