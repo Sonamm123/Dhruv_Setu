@@ -13,6 +13,7 @@ import Expeditions from "./pages/Expeditions/Expeditions";
 import ExpeditionDetail from "./pages/ExpeditionDetail/ExpeditionDetail";
 import Media from "./pages/Media/Media";
 import Learn from "./pages/Learn/Learn";
+import Map from "./pages/Map/Map";
 
 function Landing() {
   return (
@@ -53,6 +54,7 @@ export default function App() {
 
         <Route path="*" element={<NotFound />} />
         <Route path="/learn" element={<Learn />} />
+        <Route path="/map" element={<Map />} />
       </Routes>
     </BrowserRouter>
   );
