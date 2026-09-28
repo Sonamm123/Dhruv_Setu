@@ -6,6 +6,7 @@ import {
 
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import Personalized from "./pages/Personalized/Personalized";
 
 function Landing() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
 
         <Route element={<AuthenticatedLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/personalized" element={<Personalized />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
