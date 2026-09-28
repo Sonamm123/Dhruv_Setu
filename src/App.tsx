@@ -11,6 +11,7 @@ import Research from "./pages/Research/Research";
 import ResearchDetail from "./pages/ResearchDetail/ResearchDetail";
 import Expeditions from "./pages/Expeditions/Expeditions";
 import ExpeditionDetail from "./pages/ExpeditionDetail/ExpeditionDetail";
+import Media from "./pages/Media/Media";
 
 function Landing() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
     path="/expeditions/:id"
     element={<ExpeditionDetail />}
   />
+       <Route path="/media" element={<Media />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
