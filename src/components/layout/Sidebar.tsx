@@ -1,4 +1,5 @@
 import {
+  User,
   Home,
   UserRound,
   Compass,
@@ -76,7 +77,23 @@ export default function Sidebar() {
         </nav>
       </div>
 
-      <div className="border-t border-slate-200 p-3">
+      {/* Account navigation */}
+      <div className="border-t border-slate-200 p-3 space-y-1">
+        <NavLink
+          to="/profile"
+          className={({ isActive }) =>
+            [
+              "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+              isActive
+                ? "bg-indigo-50 text-indigo-700"
+                : "text-slate-600 hover:bg-slate-50 hover:text-slate-900",
+            ].join(" ")
+          }
+        >
+          <User size={17} strokeWidth={1.8} />
+          <span>Profile</span>
+        </NavLink>
+
         <NavLink
           to="/settings"
           className="flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900"

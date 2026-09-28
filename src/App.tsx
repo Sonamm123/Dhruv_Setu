@@ -14,6 +14,7 @@ import ExpeditionDetail from "./pages/ExpeditionDetail/ExpeditionDetail";
 import Media from "./pages/Media/Media";
 import Learn from "./pages/Learn/Learn";
 import Map from "./pages/Map/Map";
+import Profile from "./pages/Profile/Profile";
 
 function Landing() {
   return (
@@ -55,6 +56,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/learn" element={<Learn />} />
         <Route path="/map" element={<Map />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
