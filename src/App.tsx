@@ -4,6 +4,8 @@ import {
   Routes,
 } from "react-router";
 
+import Login from "./pages/Login/Login";
+
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import ResearcherLayout from "./layouts/ResearcherLayout";
 import AdminLayout from "./layouts/AdminLayout";
@@ -45,13 +47,7 @@ import AdminContent from "./pages/AdminContent/AdminContent";
 import AdminUsers from "./pages/AdminUsers/AdminUsers";
 
 function Landing() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-50">
-      <h1 className="text-3xl font-semibold text-slate-900">
-        PolarConnect India
-      </h1>
-    </div>
-  );
+  return <Login />;
 }
 
 function NotFound() {
