@@ -33,6 +33,9 @@ import ResearcherLinkWork from "./pages/ResearcherLinkWork/ResearcherLinkWork";
 import ResearcherReview from "./pages/ResearcherReview/ResearcherReview";
 import ResearcherSubmissions from "./pages/ResearcherSubmissions/ResearcherSubmissions";
 
+import ResearcherReports from "./pages/ResearcherReports/ResearcherReports";
+
+
 function Landing() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50">
@@ -140,6 +143,8 @@ export default function App() {
             path="/researcher/reports"
             element={<ResearcherSubmissions />}
           />
+
+          <Route path="/researcher/reports" element={<ResearcherReports />} />
 
           {/* New Entry */}
           <Route
