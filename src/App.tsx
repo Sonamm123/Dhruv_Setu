@@ -42,6 +42,7 @@ import AdminResearcherVerification from "./pages/AdminResearcherVerification/Adm
 import AdminSubmissionQueue from "./pages/AdminSubmissionQueue/AdminSubmissionQueue";
 import AdminSubmissionReview from "./pages/AdminSubmissionReview/AdminSubmissionReview";
 import AdminContent from "./pages/AdminContent/AdminContent";
+import AdminUsers from "./pages/AdminUsers/AdminUsers";
 
 function Landing() {
   return (
@@ -215,7 +216,8 @@ export default function App() {
     element={<AdminSubmissionReview />}
   />
      <Route path="/admin/content" element={<AdminContent />} />
-
+      
+      <Route path="/admin/users" element={<AdminUsers />} />
         </Route>
 
         {/* =========================
