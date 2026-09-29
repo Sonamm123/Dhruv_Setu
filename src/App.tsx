@@ -28,6 +28,7 @@ import ResearcherResearch from "./pages/ResearcherResearch/ResearcherResearch";
 import ResearcherNewEntry from "./pages/ResearcherNewEntry/ResearcherNewEntry";
 
 import ResearcherAddContent from "./pages/ResearcherAddContent/ResearcherAddContent";
+import ResearcherLinkWork from "./pages/ResearcherLinkWork/ResearcherLinkWork";
 
 function Landing() {
   return (
@@ -147,6 +148,11 @@ export default function App() {
   path="/researcher/new-entry/content"
   element={<ResearcherAddContent />}
 />
+<Route
+  path="/researcher/new-entry/link-work"
+  element={<ResearcherLinkWork />}
+/>
+
 
           {/* My Submission */}
           <Route

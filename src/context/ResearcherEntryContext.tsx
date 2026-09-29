@@ -17,6 +17,7 @@ type ResearcherEntryContextValue = {
   updateEntry: (updates: Partial<ResearcherEntry>) => void;
   addContent: (content: ResearcherContent) => void;
   removeContent: (contentId: string) => void;
+  toggleRelatedResearch: (researchId: string) => void;
   resetEntry: () => void;
 };
 
@@ -57,6 +58,22 @@ export function ResearcherEntryProvider({
             (content) => content.id !== contentId,
           ),
         }));
+      },
+
+      toggleRelatedResearch: (researchId: string) => {
+        setEntry((current) => {
+          const alreadySelected =
+            current.relatedResearchIds.includes(researchId);
+
+          return {
+            ...current,
+            relatedResearchIds: alreadySelected
+              ? current.relatedResearchIds.filter(
+                  (id) => id !== researchId,
+                )
+              : [...current.relatedResearchIds, researchId],
+          };
+        });
       },
 
       resetEntry: () => {

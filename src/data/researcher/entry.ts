@@ -40,6 +40,7 @@ export type ResearcherEntry = {
   sourceIdentifier: string;
   keywords: string[];
   contents: ResearcherContent[];
+  relatedResearchIds: string[];
 };
 
 export const initialResearcherEntry: ResearcherEntry = {
@@ -54,6 +55,7 @@ export const initialResearcherEntry: ResearcherEntry = {
   sourceIdentifier: "",
   keywords: [],
   contents: [],
+  relatedResearchIds: [],
 };
 
 export const researchAreas = [
