@@ -24,6 +24,8 @@ import Profile from "./pages/Profile/Profile";
 import ResearcherDashboard from "./pages/ResearcherDashboard/ResearcherDashboard";
 import ResearcherPlaceholder from "./pages/ResearcherPlaceholder/ResearcherPlaceholder";
 
+import ResearcherResearch from "./pages/ResearcherResearch/ResearcherResearch";
+
 function Landing() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50">
@@ -123,7 +125,7 @@ export default function App() {
           {/* Existing Research */}
           <Route
             path="/researcher/research"
-            element={<ResearcherPlaceholder />}
+            element={<ResearcherResearch />}
           />
 
           {/* Reports */}
