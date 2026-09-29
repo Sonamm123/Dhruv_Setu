@@ -27,6 +27,8 @@ import ResearcherPlaceholder from "./pages/ResearcherPlaceholder/ResearcherPlace
 import ResearcherResearch from "./pages/ResearcherResearch/ResearcherResearch";
 import ResearcherNewEntry from "./pages/ResearcherNewEntry/ResearcherNewEntry";
 
+import ResearcherAddContent from "./pages/ResearcherAddContent/ResearcherAddContent";
+
 function Landing() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50">
@@ -140,6 +142,11 @@ export default function App() {
             path="/researcher/new-entry"
             element={<ResearcherNewEntry />}
           />
+
+          <Route
+  path="/researcher/new-entry/content"
+  element={<ResearcherAddContent />}
+/>
 
           {/* My Submission */}
           <Route

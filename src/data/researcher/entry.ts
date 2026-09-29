@@ -9,6 +9,25 @@ export const entryTypes = [
 
 export type EntryType = (typeof entryTypes)[number];
 
+export const contentTypes = [
+  "Report",
+  "Dataset",
+  "Publication",
+  "Images",
+  "Videos",
+] as const;
+
+export type ContentType = (typeof contentTypes)[number];
+
+export type ResearcherContent = {
+  id: string;
+  type: ContentType;
+  title: string;
+  description: string;
+  fileName: string;
+  fileSize: number;
+};
+
 export type ResearcherEntry = {
   entryType: EntryType;
   title: string;
@@ -20,6 +39,7 @@ export type ResearcherEntry = {
   summary: string;
   sourceIdentifier: string;
   keywords: string[];
+  contents: ResearcherContent[];
 };
 
 export const initialResearcherEntry: ResearcherEntry = {
@@ -33,6 +53,7 @@ export const initialResearcherEntry: ResearcherEntry = {
   summary: "",
   sourceIdentifier: "",
   keywords: [],
+  contents: [],
 };
 
 export const researchAreas = [

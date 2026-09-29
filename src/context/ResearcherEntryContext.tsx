@@ -8,12 +8,15 @@ import {
 
 import {
   initialResearcherEntry,
+  type ResearcherContent,
   type ResearcherEntry,
 } from "../data/researcher/entry";
 
 type ResearcherEntryContextValue = {
   entry: ResearcherEntry;
   updateEntry: (updates: Partial<ResearcherEntry>) => void;
+  addContent: (content: ResearcherContent) => void;
+  removeContent: (contentId: string) => void;
   resetEntry: () => void;
 };
 
@@ -37,6 +40,22 @@ export function ResearcherEntryProvider({
         setEntry((current) => ({
           ...current,
           ...updates,
+        }));
+      },
+
+      addContent: (content: ResearcherContent) => {
+        setEntry((current) => ({
+          ...current,
+          contents: [...current.contents, content],
+        }));
+      },
+
+      removeContent: (contentId: string) => {
+        setEntry((current) => ({
+          ...current,
+          contents: current.contents.filter(
+            (content) => content.id !== contentId,
+          ),
         }));
       },
 
