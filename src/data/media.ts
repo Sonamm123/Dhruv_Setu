@@ -16,7 +16,7 @@ export const mediaData: MediaItem[] = [
     category: "Antarctica",
     date: "18 Aug 2024",
     image:
-      "https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1000&q=80",
     description:
       "A visual exploration of the Antarctic landscape and its extreme polar environment.",
   },

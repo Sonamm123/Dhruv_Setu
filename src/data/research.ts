@@ -18,7 +18,7 @@ export const researchData: ResearchItem[] = [
     date: "12 Aug 2024",
     author: "Polar Research Team",
     image:
-      "https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1200&q=80",
     summary:
       "Explore observations and research surrounding changes in Antarctic ice shelves and their connection with the changing polar climate.",
     tags: ["Climate", "Antarctica", "Research"],

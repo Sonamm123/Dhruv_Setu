@@ -23,7 +23,7 @@ export const polarLocations: PolarLocation[] = [
     description:
       "India's permanent research station in Antarctica supporting multidisciplinary polar research.",
     image:
-      "https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=900&q=80",
     coordinates: {
       lat: -70.7697,
       lng: 11.7333,

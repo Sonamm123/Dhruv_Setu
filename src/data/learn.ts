@@ -17,7 +17,7 @@ export const learnData: LearnItem[] = [
     level: "Beginner",
     duration: "15 min",
     image:
-      "https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1000&q=80",
     description:
       "Understand the fundamentals of polar science and why the Arctic and Antarctic are important to Earth's systems.",
     topics: ["Polar Regions", "Earth Science", "Research"],

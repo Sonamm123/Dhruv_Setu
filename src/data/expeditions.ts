@@ -23,7 +23,7 @@ export const expeditionData: Expedition[] = [
     date: "2024–2025",
     duration: "12 Months",
     image:
-      "https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1200&q=80",
     description:
       "A scientific expedition focused on atmospheric, environmental and geological research in the Antarctic region.",
     objectives: [

@@ -5,7 +5,7 @@ export default function HeroBanner() {
     <section className="relative min-h-[220px] overflow-hidden rounded-2xl bg-slate-900">
       {/* Background */}
       <img
-        src="https://images.unsplash.com/photo-1517783992600-8c5c2b9f1d67?auto=format&fit=crop&w=1600&q=80"
+        src="https://images.unsplash.com/photo-1517783999520-f068d7431a60?auto=format&fit=crop&w=1600&q=80"
         alt="Polar landscape"
         className="absolute inset-0 h-full w-full object-cover"
       />
