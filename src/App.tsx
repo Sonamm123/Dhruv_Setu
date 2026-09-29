@@ -39,7 +39,7 @@ import ResearcherProfile from "./pages/ResearcherProfile/ResearcherProfile";
 
 import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import AdminResearcherVerification from "./pages/AdminResearcherVerification/AdminResearcherVerification";
-
+import AdminSubmissionQueue from "./pages/AdminSubmissionQueue/AdminSubmissionQueue";
 
 function Landing() {
   return (
@@ -203,6 +203,10 @@ export default function App() {
     path="/admin/researcher-verification"
     element={<AdminResearcherVerification />}
   />
+      <Route
+  path="/admin/submission-queue"
+  element={<AdminSubmissionQueue />}
+/>
 
         </Route>
 
