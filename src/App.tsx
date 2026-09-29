@@ -6,6 +6,7 @@ import {
 
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import ResearcherLayout from "./layouts/ResearcherLayout";
+import AdminLayout from "./layouts/AdminLayout";
 
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Personalized from "./pages/Personalized/Personalized";
@@ -36,6 +37,10 @@ import ResearcherSubmissions from "./pages/ResearcherSubmissions/ResearcherSubmi
 import ResearcherReports from "./pages/ResearcherReports/ResearcherReports";
 import ResearcherProfile from "./pages/ResearcherProfile/ResearcherProfile";
 
+import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
+import AdminResearcherVerification from "./pages/AdminResearcherVerification/AdminResearcherVerification";
+
+
 function Landing() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50">
@@ -60,7 +65,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Landing */}
+        {/* =========================
+            LANDING
+            ========================= */}
         <Route
           path="/"
           element={<Landing />}
@@ -106,7 +113,7 @@ export default function App() {
           />
         </Route>
 
-        {/* These are existing routes from the current project */}
+        {/* Existing standalone routes */}
         <Route
           path="/learn"
           element={<Learn />}
@@ -141,10 +148,8 @@ export default function App() {
           {/* Reports */}
           <Route
             path="/researcher/reports"
-            element={<ResearcherSubmissions />}
+            element={<ResearcherReports />}
           />
-
-          <Route path="/researcher/reports" element={<ResearcherReports />} />
 
           {/* New Entry */}
           <Route
@@ -153,19 +158,19 @@ export default function App() {
           />
 
           <Route
-  path="/researcher/new-entry/content"
-  element={<ResearcherAddContent />}
-/>
-<Route
-  path="/researcher/new-entry/link-work"
-  element={<ResearcherLinkWork />}
-/>
+            path="/researcher/new-entry/content"
+            element={<ResearcherAddContent />}
+          />
 
-<Route
-  path="/researcher/new-entry/review"
-  element={<ResearcherReview />}
-/>
+          <Route
+            path="/researcher/new-entry/link-work"
+            element={<ResearcherLinkWork />}
+          />
 
+          <Route
+            path="/researcher/new-entry/review"
+            element={<ResearcherReview />}
+          />
 
           {/* My Submission */}
           <Route
@@ -184,6 +189,21 @@ export default function App() {
             path="/researcher/settings"
             element={<ResearcherPlaceholder />}
           />
+        </Route>
+
+        {/* =========================
+            ADMIN PORTAL
+            ========================= */}
+        <Route element={<AdminLayout />}>
+          <Route
+            path="/admin"
+            element={<AdminDashboard />}
+          />
+          <Route
+    path="/admin/researcher-verification"
+    element={<AdminResearcherVerification />}
+  />
+
         </Route>
 
         {/* =========================
