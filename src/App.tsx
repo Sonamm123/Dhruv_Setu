@@ -34,7 +34,7 @@ import ResearcherReview from "./pages/ResearcherReview/ResearcherReview";
 import ResearcherSubmissions from "./pages/ResearcherSubmissions/ResearcherSubmissions";
 
 import ResearcherReports from "./pages/ResearcherReports/ResearcherReports";
-
+import ResearcherProfile from "./pages/ResearcherProfile/ResearcherProfile";
 
 function Landing() {
   return (
@@ -170,13 +170,13 @@ export default function App() {
           {/* My Submission */}
           <Route
             path="/researcher/submissions"
-            element={<ResearcherPlaceholder />}
+            element={<ResearcherSubmissions />}
           />
 
           {/* Researcher Profile */}
           <Route
             path="/researcher/profile"
-            element={<ResearcherPlaceholder />}
+            element={<ResearcherProfile />}
           />
 
           {/* Researcher Settings */}
