@@ -40,6 +40,7 @@ import ResearcherProfile from "./pages/ResearcherProfile/ResearcherProfile";
 import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import AdminResearcherVerification from "./pages/AdminResearcherVerification/AdminResearcherVerification";
 import AdminSubmissionQueue from "./pages/AdminSubmissionQueue/AdminSubmissionQueue";
+import AdminSubmissionReview from "./pages/AdminSubmissionReview/AdminSubmissionReview";
 
 function Landing() {
   return (
@@ -207,6 +208,11 @@ export default function App() {
   path="/admin/submission-queue"
   element={<AdminSubmissionQueue />}
 />
+
+      <Route
+    path="/admin/submission-review/:id"
+    element={<AdminSubmissionReview />}
+  />
 
         </Route>
 
